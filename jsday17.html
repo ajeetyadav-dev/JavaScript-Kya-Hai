@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Day 17</title>
+</head>
+<body>
+    <h2>Local Storage</h2>
+    <input type="text" id="name">
+    <button onclick="saveData()">Save Data</button>
+    <script>
+       function saveData(){
+        let name = document.getElementById("name").value;
+        localStorage.setItem("userName", name);
+       }
+       let data = localStorage.getItem("userName");
+       document.body.innerHTML += "<h3>Saved Name: " + data + "</h3>";
+    </script>
+</body>
+</html>

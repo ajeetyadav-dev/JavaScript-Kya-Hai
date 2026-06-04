@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Day 14</title>
+</head>
+<body>
+    <h1 id="title" class="box">Hello World</h1>
+    <p>Html</p>
+    <p>CSS</p>
+    <p>JS</p>
+    <p>PHP</p>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+        let boxes = document.getElementsByClassName("box");
+        console.log(boxes);
+        let items = document.querySelectorAll("p");
+        items.forEach(function(item){
+            item.style.color = "red";
+            item.style.fontSize = "20px";
+        });
+        console.log(items);
+      let heading = document.querySelector("h1");
+      console.log(heading);
+      let headings = document.getElementsByTagName("h1");
+      console.log(headings);
+    </script>
+</body>
+</html>

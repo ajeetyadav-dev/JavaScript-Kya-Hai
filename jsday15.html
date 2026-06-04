@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Day 15</title>
+</head>
+<body>
+    <h2 id="title">Events</h2>
+<input type="text" id="input" placeholder="Type Something">
+
+    <button id="btn"> Click</button>
+    <script>
+let btn = document.getElementById("btn");
+btn.addEventListener("click",function(){
+    alert("Button Clicked");
+})
+
+        let input = document.getElementById("input");
+        input.addEventListener("keydown",function(){
+            console.log("Key Pressed");
+        })
+let title = document.getElementById("title");
+title.onmouseover = function(){
+    title.style.color = "blue";
+};
+title.onmouseout = function(){
+    title.style.color = "black";
+}
+function doubleClick(){
+    alert("You Double Clicked!")
+}
+    </script>
+</body>
+</html>
