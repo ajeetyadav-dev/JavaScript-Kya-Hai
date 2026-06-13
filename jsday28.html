@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Day 28</title>
+</head>
+
+<body>
+    <h1>OOP IN JAVASCRIPT</h1>
+    <script>
+        class Student {
+            constructor(name) {
+                this.name = name;
+            }
+        
+        greet() {
+
+            console.log(`Hello ${this.name}`);
+        }}
+        let s1 = new Student("Ajeet");
+        s1.greet();
+        let s2 = new Student("Rahul");
+        s2.greet();
+        let s3 = new Student("Rohit");
+        s3.greet();
+    </script>
+</body>
+
+</html>
