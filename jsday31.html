@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js day 31 Dom EVENTS</title>
+</head>
+<body>
+    <h1>Dom Events</h1>
+    <button>Click Me</button>
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+
+    </ul>
+    <script>
+        document.getElementById("list")
+        .addEventListener("click", function(e){
+            console.log(e.target.innerText);
+        });
+    </script>
+</body>
+</html>
